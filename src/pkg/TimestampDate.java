@@ -9,14 +9,14 @@ import java.util.logging.Logger;
 /**
  *
  * @author Ajit
+ * @Date 09-11-2014
  * Get 1 June 2014 from 41971.
  */
 public class TimestampDate {
-
     public static void main(String[] args) {
         try {
-            int n= 41971;//*1000;
-            System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(new Date(n * 1000L)));
+            int num= 41971;
+            System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(new Date(num * 1000L)));
             
             SimpleDateFormat formatter= new SimpleDateFormat("dd/MM/yyyy");
             String sampleDate= "01/06/2014";
@@ -27,5 +27,4 @@ public class TimestampDate {
             Logger.getLogger(TimestampDate.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
 }
